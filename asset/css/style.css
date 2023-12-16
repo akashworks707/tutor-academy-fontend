@@ -7,7 +7,7 @@
     --secondary-color: #fff;
     --hover-color:#e29d26;
     --link-color: #000;
-    --extra-bg: #000000c9;
+    --extra-bg: #363636;
   }
 
   body{
@@ -16,8 +16,14 @@
   }
 /*========= Header-Section =========*/
 .header-section{
-    background: var(--extra-bg);
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 10px -10px;
+background: #363636;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 10px -10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header-section .logo-col img{
+    max-width: 100px;
 }
 .header-section .navbar-nav{
     column-gap: 25px;
@@ -270,11 +276,164 @@
     line-height: 20px;
     color: var(--primary-color);
 }
+/*********Find Tutor page ***********/
+.tutor-list-section .form-col{
+    position: sticky;
+    top: 30%;
+}
+.tutor-list-section .tutor-filter .filter-title{
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #000;
+}
+.tutor-list-section .tutor-filter{
+    flex-wrap: wrap;
+    column-gap: 3%;
+    row-gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    padding:15px 10px;
+}
+.tutor-list-section .tutor-filter select {
+	width: 48%;
+	outline: none;
+	border-radius: 0px;
+	border-color: #e29d26;
+}
+.tutor-list-section .tutor-filter select:focus{
+    box-shadow: none;
+}
+.tutor-list-section .tutor-filter input[type="submit"]{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    border: 1px solid;
+    border-color: var(--hover-color);
+    background-color: var(--hover-color);
+    transition: 0.4s;
+}
+.tutor-list-section .tutor-filter input[type="submit"]:hover{
+    color: var(--hover-color);
+    border: 1px solid;
+    border-color: var(--hover-color);
+    background-color: transparent;
+}
+.tutor-list-section .teacher-list{
+    column-gap: 11px;
+    row-gap: 30px;
+}
+.tutor-list-section .teacher-list .col-4 img{
+    max-width: 160px;
+    border-radius: 50%;
+    height: 160px;
+    object-fit: cover;
+}
+.tutor-list-section .teacher-list .col-4{
+    width: 32.333%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    padding: 20px 10px !important;
+}
+.tutor-list-section .teacher-list .col-4 h2{
+        font-size: 22px;
+}
+.tutor-list-section .teacher-list .col-4 h3{
+    font-size: 16px;
+    line-height: 18px;
+    color: #00000082;
+}
+.tutor-list-section .teacher-list .col-4 p{
+    font-size: 14px;
+    line-height: 19px;
+}
+.tutor-list-section .teacher-list .col-4 a{
+    font-size: 18px;
+    background: var(--hover-color);
+    width: 100%;
+    transition: 0.4s;
+}
+.tutor-list-section .teacher-list .col-4 a:hover{
+    background: transparent;
+    border: 1px solid;
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+}
+/******* Tutor-Profile-Section *******8*/
+.tutor-profile-section .form-row {
+    column-gap: 20px;
+}
+.tutor-profile-section .form-row .left-col{
+    width: 73%;
+}
+.tutor-profile-section .form-row .left-col img{
+    max-width: 160px;
+  border-radius: 50%;
+  height: 160px;
+  object-fit: cover;
+}
+.tutor-profile-section .form-row .left-col span{
+    font-size: 14px;
+}
+.tutor-profile-section .form-row .left-col .jssocials-share-link{
+    color: var(--primary-color);
+}
+.tutor-profile-section .form-row .left-col .jssocials-share-logo::before {
+	font-size: 14px;
+	padding: 6px 9px;
+	border-radius: 50%;
+	line-height: 39px;
+	display: inline;
+	border: 1px solid #000;
+    transition: 0.4s;
+}
+.tutor-profile-section .form-row .left-col .jssocials-share-link:hover .jssocials-share-logo::before {
+    color: red;
+    border-color: var(--hover-color);
+}
+.tutor-profile-section .form-row .left-col .jssocials-shares{
+    display: flex;
+    margin: 0 auto;
+}
+.tutor-profile-section .form-row .left-col .fa-envelope::before {
+	padding: 6px 7px !important;
+}
+.tutor-profile-section .form-row .left-col .fa-phone::before{
+    padding: 6px 6px !important;
+}
+.card .card-body .form-group input, .card .card-body .form-group textarea{
+    margin: 5px 0 10px 0;
+}
+.card .card-body .form-group input:focus{
+    box-shadow: none;
+    border-color: var(--hover-color);
+}
+.card .card-body .form-group textarea:focus{
+    box-shadow: none;
+    border-color: var(--hover-color);
+}
+.card{
+    position: sticky;
+    top: 20%;
+}
+.card .card-body .btn{
+    width: 100%;
+    background-color: #e29d26;
+    transition: .4s;
+}
+.card .card-body .btn:hover{
+    background-color: transparent;
+    border: 1px solid;
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+}
 /*========Footer-style =========*/
 .footer-section{
     background: var(--extra-bg);
     padding: 40px 0;
     padding-bottom: 0;
+}
+.footer-section .logo img{
+    max-width: 140px;
 }
 .footer-section .row p{
     font-size: 15px;
