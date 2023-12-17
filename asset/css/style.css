@@ -14,6 +14,12 @@
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
   }
+  .page-title{
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    justify-content: center;
+    line-height: 46px;
+  }
 /*========= Header-Section =========*/
 .header-section{
 background: #363636;
@@ -82,8 +88,9 @@ background: #363636;
 
   .carousel-inner img {
     width: 100%;
-    height: auto;
+    height: calc(100vh - 70px);
     opacity: 0.8;
+    object-fit: cover;
   }
   .carousel-content{
     position: absolute;
@@ -95,9 +102,26 @@ background: #363636;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     background: #00000070;
+  }
+  .scorll-down a{
+    color:var(--secondary-color);
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .scorll-down a:hover{
+    border-color: var(--hover-color);
   }
   .carousel-title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -133,6 +157,15 @@ background: #363636;
   }
   .counter-section .row{
     column-gap: 25px;
+  } 
+  .counter-section .row .col-md-3 img{
+    width: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.4s;
+  }
+  .counter-section .row .col-md-3:hover img{
+    transform: scale(1.06);
   }
   .counter-section .row .col-md-3{
     border-color: var(--primary-color);
@@ -140,7 +173,7 @@ background: #363636;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0;
+    padding: 35px 0;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     transition: 0.4s;
   }
@@ -159,9 +192,6 @@ background: #363636;
     color: var(--primary-color);
   }
 /*=======Support-Secton-Style ===========*/
-.support-section .left-col{
-    padding-left: 13%;
-}
 .support-section .title{
     font-size: 30px;
     line-height: 37px;
@@ -171,8 +201,9 @@ background: #363636;
     transition: 0.4s;
 }
 .support-section .title:first-child{
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 600;
+    line-height: 35px;
 }
 .support-section .title a:hover{
     color: var(--hover-color);
@@ -211,7 +242,19 @@ background: #363636;
     color: var(--secondary-color);
     border-color: var(--hover-color)
 }   
-/*======categori-section-style =======*/
+/*======categori-sect{ion-style =======*/
+.categori-section .col-3{
+    background-image: url("../img/cat-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.categori-section .single-col{
+    background: #000000a8;
+    height: 100%;
+    width: 100%;
+    padding: 40px 10px !important;
+}
 .categori-section .title-row h2{
     font-size: 30px;
     color: var(--primary-color);
@@ -236,10 +279,13 @@ background: #363636;
 }
 .categori-section img{
     width: 100%;
-    max-width: 130px;
+    max-width: 80px;
 }
 .categori-section .col-3 h3{
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 29px;
+    color: #fff !important;
+    margin-top: 15px;
 }
 .categori-section .row{
     gap: 20px;
@@ -248,7 +294,13 @@ background: #363636;
 .categori-section .row a{
     text-decoration: none;
     max-width: 50%;
-    padding: 20px 10px;
+    padding: 0;
+}
+.categori-section .hover-flip{
+    display: none;
+}
+.categori-section .col-3:hover .hover-flip{
+    display: inline-block;
 }
 /*========= Review-Slider-Style =========*/
 .review-section .slider .slick-track{
@@ -279,14 +331,17 @@ background: #363636;
 /*********Find Tutor page ***********/
 .tutor-list-section .form-col{
     position: sticky;
-    top: 30%;
+    top: 20%;
 }
 .tutor-list-section .tutor-filter .filter-title{
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 600;
     text-align: center;
     display: inline-block;
     width: 100%;
-    color: #000;
+    padding: 8px 0;
+    color: var(--primary-color);
+    background: #00000014;
 }
 .tutor-list-section .tutor-filter{
     flex-wrap: wrap;
@@ -296,7 +351,7 @@ background: #363636;
     padding:15px 10px;
 }
 .tutor-list-section .tutor-filter select {
-	width: 48%;
+	width: 100%;
 	outline: none;
 	border-radius: 0px;
 	border-color: #e29d26;
@@ -328,6 +383,19 @@ background: #363636;
     border-radius: 50%;
     height: 160px;
     object-fit: cover;
+    transition: 0.4s;
+    border: 1px solid;
+}
+.tutor-list-section .teacher-list .col-4{
+    transition: 0.4s;
+}
+.tutor-list-section .teacher-list .col-4:hover{
+    border: 1px solid !important;
+    border-color: var(--hover-color) !important;
+}
+.tutor-list-section .teacher-list .col-4:hover img{
+    transform: scale(1.05);
+    border-color: var(--hover-color);
 }
 .tutor-list-section .teacher-list .col-4{
     width: 32.333%;
@@ -345,6 +413,7 @@ background: #363636;
 .tutor-list-section .teacher-list .col-4 p{
     font-size: 14px;
     line-height: 19px;
+    font-weight: 600;
 }
 .tutor-list-section .teacher-list .col-4 a{
     font-size: 18px;
@@ -400,31 +469,40 @@ background: #363636;
 .tutor-profile-section .form-row .left-col .fa-phone::before{
     padding: 6px 6px !important;
 }
-.card .card-body .form-group input, .card .card-body .form-group textarea{
+.tutor-profile-section .card .card-body .form-group input, .card .card-body .form-group textarea{
     margin: 5px 0 10px 0;
 }
-.card .card-body .form-group input:focus{
+.tutor-profile-section .card .card-body .form-group input:focus{
     box-shadow: none;
     border-color: var(--hover-color);
 }
-.card .card-body .form-group textarea:focus{
+.tutor-profile-section .card .card-body .form-group textarea:focus{
     box-shadow: none;
     border-color: var(--hover-color);
 }
-.card{
+.tutor-profile-section .card{
     position: sticky;
     top: 20%;
 }
-.card .card-body .btn{
+.tutor-profile-section .card .tuition-info{
+    background: #00000014;
+    padding: 8px 0;
+    margin: 20px;
+}
+.tutor-profile-section .card .card-body .btn{
     width: 100%;
     background-color: #e29d26;
     transition: .4s;
 }
-.card .card-body .btn:hover{
+.tutor-profile-section .card .card-body .btn:hover{
     background-color: transparent;
     border: 1px solid;
     border-color: var(--hover-color);
     color: var(--hover-color);
+}
+.education table thead tr th{
+    white-space: nowrap;
+    background: #00000014;
 }
 /*========Footer-style =========*/
 .footer-section{
