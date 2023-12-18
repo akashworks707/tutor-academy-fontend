@@ -591,3 +591,10 @@ background: #363636;
     color: var(--hover-color);
     border-color: var(--hover-color);
 }
+
+/*=========Responsive-Design ========*/
+@media only screen and (max-width: 767px) {
+    .tutor-profile-section .form-row .left-col {
+        width: 100%;
+    }
+  }
