@@ -591,8 +591,22 @@ background: #363636;
     color: var(--hover-color);
     border-color: var(--hover-color);
 }
+.tutor-list-section #search{
+    display: none;
+}
 
 /*=========Responsive-Design ========*/
+@media only screen and (max-width: 1100px){
+    .tutor-list-section #search-filter{
+        width: 30%;
+    }
+    .tutor-list-section .teacher-list{
+        width: 70%;
+    }
+    .tutor-list-section .teacher-list div{
+        width: 48.333%;
+    }
+}
 @media only screen and (max-width: 767px) {
     .tutor-profile-section .form-row .left-col {
         width: 100%;
@@ -607,6 +621,34 @@ background: #363636;
     }
     .tutor-list-section .show{
         position: inherit !important;
+        
+    }
+    .tutor-list-section #search {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 0px;
+        background: #0000;
+        border-radius: 20px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        font-size: 17px;
+        border: 1px solid;
+        border-color: var(--hover-color);
+        color: var(--primary-color);
+        transition: 0.4s;
+    }
+    .tutor-list-section #search:hover{
+        background: var(--hover-color);
+        color: var(--secondary-color);
+    }
+    .tutor-list-section .teacher-list{
+        width: 100%;
+    }
+    .tutor-list-section .teacher-list img {
+        max-width: 130px;
+        height: 130px;
     }
   }
   @media only screen and (max-width: 520px) {
