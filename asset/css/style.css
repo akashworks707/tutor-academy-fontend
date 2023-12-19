@@ -378,7 +378,7 @@ background: #363636;
     column-gap: 11px;
     row-gap: 30px;
 }
-.tutor-list-section .teacher-list .col-4 img{
+.tutor-list-section .teacher-list img{
     max-width: 160px;
     border-radius: 50%;
     height: 160px;
@@ -386,42 +386,42 @@ background: #363636;
     transition: 0.4s;
     border: 1px solid;
 }
-.tutor-list-section .teacher-list .col-4{
+.tutor-list-section .teacher-list div{
     transition: 0.4s;
 }
-.tutor-list-section .teacher-list .col-4:hover{
+.tutor-list-section .teacher-list div:hover{
     border: 1px solid !important;
     border-color: var(--hover-color) !important;
 }
-.tutor-list-section .teacher-list .col-4:hover img{
+.tutor-list-section .teacher-list div:hover img{
     transform: scale(1.05);
     border-color: var(--hover-color);
 }
-.tutor-list-section .teacher-list .col-4{
+.tutor-list-section .teacher-list div{
     width: 32.333%;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     padding: 20px 10px !important;
 }
-.tutor-list-section .teacher-list .col-4 h2{
+.tutor-list-section .teacher-list div h2{
         font-size: 22px;
 }
-.tutor-list-section .teacher-list .col-4 h3{
+.tutor-list-section .teacher-list div h3{
     font-size: 16px;
     line-height: 18px;
     color: #00000082;
 }
-.tutor-list-section .teacher-list .col-4 p{
+.tutor-list-section .teacher-list div p{
     font-size: 14px;
     line-height: 19px;
     font-weight: 600;
 }
-.tutor-list-section .teacher-list .col-4 a{
+.tutor-list-section .teacher-list div a{
     font-size: 18px;
     background: var(--hover-color);
     width: 100%;
     transition: 0.4s;
 }
-.tutor-list-section .teacher-list .col-4 a:hover{
+.tutor-list-section .teacher-list div a:hover{
     background: transparent;
     border: 1px solid;
     border-color: var(--hover-color);
@@ -597,6 +597,17 @@ background: #363636;
     .tutor-profile-section .form-row .left-col {
         width: 100%;
     }
+    .tutor-list-section .teacher-list div{
+        width: 46%;
+    }
+    .tutor-list-section #search-filter{
+        position: absolute;
+        left: -9999px;
+        width: 100%;
+    }
+    .tutor-list-section .show{
+        position: inherit !important;
+    }
   }
   @media only screen and (max-width: 520px) {
     .tutor-profile-section .tutor-details .parsonal h6, 
@@ -616,5 +627,8 @@ background: #363636;
     }
     .tutor-profile-section tbody, td, tfoot, th, thead, tr{
         font-size: 14px;
+    }
+    .tutor-list-section .teacher-list div{
+        width: 97%;
     }
   }
