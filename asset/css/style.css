@@ -420,6 +420,7 @@ background: #363636;
     background: var(--hover-color);
     width: 100%;
     transition: 0.4s;
+    font-weight: 600;
 }
 .tutor-list-section .teacher-list div a:hover{
     background: transparent;
@@ -618,10 +619,10 @@ background: #363636;
         position: absolute;
         left: -9999px;
         width: 100%;
+        margin-bottom: 30px;
     }
     .tutor-list-section .show{
         position: inherit !important;
-        
     }
     .tutor-list-section #search {
         display: block;
@@ -649,6 +650,12 @@ background: #363636;
     .tutor-list-section .teacher-list img {
         max-width: 130px;
         height: 130px;
+    }
+    .tutor-list-section .teacher-list div a{
+        width: 135px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
     }
   }
   @media only screen and (max-width: 520px) {
