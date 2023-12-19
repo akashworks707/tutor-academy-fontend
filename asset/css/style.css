@@ -657,6 +657,11 @@ background: #363636;
         font-weight: 600;
         border-radius: 10px;
     }
+    .tutor-profile-section .tution-details,
+    .tutor-profile-section .table-responsive,
+    .tutor-profile-section .card-body{
+        padding-left: 12px !important;
+    }
   }
   @media only screen and (max-width: 520px) {
     .tutor-profile-section .tutor-details .parsonal h6, 
