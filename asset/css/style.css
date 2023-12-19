@@ -598,3 +598,23 @@ background: #363636;
         width: 100%;
     }
   }
+  @media only screen and (max-width: 460px) {
+    .tutor-profile-section .tutor-details .parsonal h6, 
+    .tutor-profile-section .tutor-details .parsonal strong, 
+    .tutor-profile-section .tution-details strong,
+    .tutor-profile-section .tution-details div,
+    .tutor-profile-section .card-body form .form-group{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 5px;
+    }
+    .tutor-profile-section .card .tuition-info{
+        font-size: 20px;
+    }
+    .tutor-profile-section .education h4{
+        font-size: 20px;
+    }
+    .tutor-profile-section tbody, td, tfoot, th, thead, tr{
+        font-size: 14px;
+    }
+  }
