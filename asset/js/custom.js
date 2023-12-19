@@ -45,3 +45,13 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+// Mobile-Mobile-Advance-Filter
+$(document).ready(function() {
+  // Attach a click event handler to the button
+  $('#search').click(function() {
+    console.log("done");
+    // Add or remove the 'absolutePosition' class on the target element
+    $('#search-filter').toggleClass('show');
+  });
+});
