@@ -55,3 +55,12 @@ $(document).ready(function() {
     $('#search-filter').toggleClass('show');
   });
 });
+
+// Optional: Add event listener to handle change event
+document.getElementsByClassName('.mySelect').addEventListener('change', function() {
+  if (this.value !== '') {
+    this.removeAttribute('required');
+  } else {
+    this.setAttribute('required', 'required');
+  }
+}); 
