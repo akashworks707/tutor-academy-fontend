@@ -34,7 +34,7 @@ background: #363636;
 .header-section .navbar-nav{
     column-gap: 25px;
 }
-.header-section .row li a{  
+.header-section .row li a{
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -157,7 +157,7 @@ background: #363636;
   }
   .counter-section .row{
     column-gap: 25px;
-  } 
+  }
   .counter-section .row .col-md-3 img{
     width: 60px;
     text-align: center;
@@ -178,7 +178,7 @@ background: #363636;
     transition: 0.4s;
   }
   .counter-section .row .col-md-3:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px 1px, rgba(146, 116, 116, 0.08) 5px 1px 2px inset;  
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px 1px, rgba(146, 116, 116, 0.08) 5px 1px 2px inset;
 }
   .counter-section .row .col-md-3 .counter{
     font-size: 30px;
@@ -236,12 +236,12 @@ background: #363636;
     background: transparent;
     color: var(--link-color);
     border-color: var(--link-color);
-} 
+}
 .support-section .btn-col .call:hover{
     background: var(--hover-color);
     color: var(--secondary-color);
     border-color: var(--hover-color)
-}   
+}
 /*======categori-sect{ion-style =======*/
 .categori-section .col-3{
     background-image: url("../img/cat-bg.jpg");
@@ -272,7 +272,7 @@ background: #363636;
     width: 23.6%;
 }
 .categori-section .col-3:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px 1px, rgba(146, 116, 116, 0.08) 5px 1px 2px inset;  
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px 1px, rgba(146, 116, 116, 0.08) 5px 1px 2px inset;
 }
 .categori-section .col-3:hover h3{
     color: #00000070;
@@ -350,6 +350,15 @@ background: #363636;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     padding:15px 10px;
 }
+.tutor-list-section .tutor-filter .select-box .lavel{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.tutor-list-section .tutor-filter .select-box{
+    position: relative;
+    width: 100%;
+}
 .tutor-list-section .tutor-filter select {
 	width: 100%;
 	outline: none;
@@ -386,21 +395,68 @@ background: #363636;
     transition: 0.4s;
     border: 1px solid;
 }
-.tutor-list-section .teacher-list div{
+.tutor-list-section .teacher-list .single-tut{
     transition: 0.4s;
 }
-.tutor-list-section .teacher-list div:hover{
+.tutor-list-section .teacher-list .single-tut:hover{
     border: 1px solid !important;
     border-color: var(--hover-color) !important;
 }
-.tutor-list-section .teacher-list div:hover img{
+.tutor-list-section .teacher-list .single-tut:hover img{
     transform: scale(1.05);
     border-color: var(--hover-color);
 }
-.tutor-list-section .teacher-list div{
+.tutor-list-section .teacher-list .single-tut{
     width: 32.333%;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     padding: 20px 10px !important;
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord{
+    padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  transition: 0.4s;
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord:hover{
+    border: 1px solid;
+    border-color: var(--hover-color);
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-body .row .col-6:nth-child(odd){
+    width: 60%;
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-footer .apply{
+    text-align: center;
+    padding: 6px 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: var(--hover-color);
+    transition: 0.4s;
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-footer .apply:hover{
+    color: var(--hover-color);
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-body .row .col-6:nth-child(even){
+    width: 40%;
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-body i{
+    color: var(--hover-color);
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-body .row .content span{
+    line-height: 18px;
+    font-size: 15px;
+    white-space: break-spaces;
+    vertical-align: top;
+}
+.tutor-list-section .teacher-list .student-info .job_card_sm_job_bord .card-body .row .content h6{
+    font-weight: 700;
+}
+.tutor-list-section .teacher-list .student-info{
+    width: 49%;
+}
+.tutor-list-section .teacher-list .student-info .post-time{
+    text-align: right !important;
 }
 .tutor-list-section .teacher-list div h2{
         font-size: 22px;
@@ -664,8 +720,8 @@ background: #363636;
     }
   }
   @media only screen and (max-width: 520px) {
-    .tutor-profile-section .tutor-details .parsonal h6, 
-    .tutor-profile-section .tutor-details .parsonal strong, 
+    .tutor-profile-section .tutor-details .parsonal h6,
+    .tutor-profile-section .tutor-details .parsonal strong,
     .tutor-profile-section .tution-details strong,
     .tutor-profile-section .tution-details div,
     .tutor-profile-section .card-body form .form-group{
