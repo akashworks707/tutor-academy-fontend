@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Tutor | Turor Acadmey</title>
+    <link rel="icon" href="asset/img/fav-icon.png" type="image/x-icon">
+    <!------Font-Awesome-CDN----->
+    <script src="https://kit.fontawesome.com/db6820c2b5.js" crossorigin="anonymous"></script>
+    <!-------Bootstrap-Css------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-------- slick-css ------->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-------Custom-Css------->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <style>
+        .find-tutor-section{
+            padding: 0 25px;
+        }
+        .find-tutor-section .col-md-8{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 20px;
+        }
+        .find-tutor-section form .form-row{
+            column-gap: 2%;
+             margin-bottom: 20px;
+        }
+        .find-tutor-section form .form-row .col-6{
+            width: 49%;
+        }
+        .find-tutor-section form label{
+            margin-bottom: 5px;
+            font-style: italic;
+            font-size: 16px;
+        }
+        .find-tutor-section form .form-row input,
+        .find-tutor-section form .form-row select,
+        .find-tutor-section form .form-row textarea{
+            border: 1px solid #fbac0e;
+            box-sizing: border-box;
+            width: 100%;
+            background: transparent;
+            padding: 7px;
+            font-size: 13px;
+            color: #00000082;
+        }
+        .find-tutor-section form .form-row input:focus,
+        .find-tutor-section form .form-row select:focus,
+        .find-tutor-section form .form-row textarea:focus{
+            outline: none;
+        }
+        .find-tutor-section form .submit-btn{
+            width: 100%;
+            background-color: #fbac0e;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid #fbac0e;
+            padding: 5px;
+            transition: 0.4s;
+        }
+        .find-tutor-section form .submit-btn:hover{
+            background-color: transparent;
+            border-color: #fbac0e;
+            color: #fbac0e;
+        }
+        .find-tutor-section .sidebar .card{
+            border-color: #fbac0e;
+        }
+        @media only screen and (max-width: 767px){
+            .find-tutor-section .sidebar{
+                margin-top: 20px;
+            }
+
+        }
+        @media only screen and (max-width: 520px) {
+            .find-tutor-section .container>h3{
+                font-size: 18px;
+                line-height: 25px;
+            }
+            .find-tutor-section .container>h5{
+                font-size: 16px;
+                line-height: 25px;
+            }
+            .find-tutor-section{
+                padding-top: 15px !important;
+            }
+            .find-tutor-section form .form-row{
+                flex-wrap: wrap;
+                row-gap: 15px;
+            }
+            .find-tutor-section form .form-row .col-6{
+                width: 100% !important;
+            }
+            .find-tutor-section .sidebar{
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- --------Header-Section-Start---------->
+    <div class="header-section py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2 logo-col">
+                    <a href="index.html"><img class="img-fluid" src="asset/img/logo.png" alt=""></a>
+                </div>
+                <div class="col-8 nav-col">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-2 btn-col d-flex justify-content-end">
+                    <button class="reg">Register</button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------Header-Section-End---------->
+
+    <!------- TFind Tutor section-Start ------->
+    <div class="parent mt-3 py-5 find-tutor-section" data-select2-id="17">
+        <div class="container" data-select2-id="16">
+            <h3 class="font-weight-bold mb-0">আপনি কি গৃহ শিক্ষক অথবা শিক্ষিকা খুঁজছেন?</h3>
+            <h5 class="mt-1">অভিজ্ঞ শিক্ষক অথবা শিক্ষিকা খুঁজে পেতে কল করুনঃ <a href="#">016 *******</a>
+                অথবা নিচের ফর্মটি পূরণ করুন।</h5>
+            <div class="row my-5 pt-2">
+                <div class="col-md-8 mb-10">
+                    <form action="">
+                        <div class="form-row d-flex">
+                            <div class="col-6">
+                                <label class="d-block" for="name">Your Name*</label>
+                                <input class="w-100" type="text" placeholder="Your Name" name="" id="name">
+                            </div>
+                            <div class="col-6">
+                                <label class="d-block"  for="phn">Phone Number*</label>
+                                <input class="w-100" type="text" placeholder="Phone Number" name="" id="phn">
+                            </div>
+                        </div>
+                        <div class="form-row d-flex">
+                            <div class="col-6">
+                                <label class="d-block" for="Category">Select Category*</label>
+                                <select class="w-100" name="" id="Category">
+                                    <option value="">Bangla</option>
+                                    <option value="">Bangla</option>
+                                    <option value="">Bangla</option>
+                                    <option value="">Bangla</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="d-block" for="class">Select Class*</label>
+                                <select class="w-100" name="" id="class">
+                                    <option value="">Class 5</option>
+                                    <option value="">Class 5</option>
+                                    <option value="">Class 5</option>
+                                    <option value="">Class 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="d-block" for="Subjects">Select Subjects*</label>
+                            <select class="w-100" name="" id="Subjects">
+                                <option value="">Bangla</option>
+                                <option value="">Bangla</option>
+                                <option value="">Bangla</option>
+                                <option value="">Bangla</option>
+                            </select>
+                        </div>
+                        <div class="form-row d-flex">
+                            <div class="col-6">
+                                <label class="d-block" for="distric">Select District*</label>
+                                <select class="w-100" name="" id="distric">
+                                    <option value="">Dhaka</option>
+                                    <option value="">Dhaka</option>
+                                    <option value="">Dhaka</option>
+                                    <option value="">Dhaka</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="d-block" for="area">Select Area*</label>
+                                <select class="w-100" name="" id="area">
+                                    <option value="">Mirpur-10</option>
+                                    <option value="">Mirpur-10</option>
+                                    <option value="">Mirpur-10</option>
+                                    <option value="">Mirpur-10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="d-block" for="address">Address*</label>  
+                            <textarea class="w-100" name="" id="address" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-4 mb-10 sidebar">
+                    <div class="card">
+                        <h5 class="bg-custom text-dark py-3 ps-2">HELP &amp; INFO</h5>
+                        <div class="p-2"><strong>Q. If i cant get the desired tutor ?</strong>
+                            <p class="mt-1 text-secondary">
+                                Just fill up the Request for a tutor form and submit request. We will try to give you
+                                the tutor according to your choice.
+                            </p> <strong>Q. what will happen after fill the forms ?</strong>
+                            <p class="mt-1 text-secondary text-justify">
+                                After submit the form the information will be sent to DeshTutor.com support team. They
+                                will review / verify the info and will publish on the available tuitions section.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!------- Tutor-list-section-End ------->
+
+
+    <!-------- Footer-Section-Start --------->
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo col-6">
+                        <a href="index.html"> <img class="img-fluid mb-3" src="asset/img/logo.png" alt="footer-logo">
+                        </a>
+                    </div>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC.</p>
+                    <div class="contact-info">
+                        <a class="tel text-decoration-none d-inline-block" href="tel:0174348584">0174348584</a><br>
+                        <a class="mail text-decoration-none  d-inline-block"
+                            href="mail:tutor@gmail.com">tutor@gmail.com</a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Book Class</a></li>
+                        <li><a href="#">Book Class</a></li>
+                        <li><a href="#">Book Class</a></li>
+                        <li><a href="#">Book Class</a></li>
+                        <li><a href="#">Book Class</a></li>
+                        <li><a href="#">Book Class</a></li>
+                        <li><a href="#">Book Class</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Our Service</h3>
+                    <ul>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row socket">
+                <div class="col">
+                    <p class="text-center">&copy;Copyright 2023 | <a href="index.html">Tutotor Academy</a> | All
+                        Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- Footer-Section-End --------->
+    <!-------Bootstrap-js------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!------Slick-js ----->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--------Custom-js----->
+    <script src="asset/js/custom.js"></script> 
+</body>
+
+</html>
